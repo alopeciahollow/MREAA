@@ -48,21 +48,58 @@
       <h2 class="section-title">Choose Your Membership</h2>
       <hr class="rule-under">
     </div>
-    <div style="max-width:520px; margin:0 auto;">
-      <div class="tier featured">
-        <span class="flag">Annual Membership</span>
-        <h3>MREAA Membership</h3>
-        <div class="price">$75</div>
-        <div class="per">per person · per year</div>
+    <div class="grid cols-2">
+      <div class="tier">
+        <h3>Student Member</h3>
+        <div class="price">Free</div>
+        <div class="per">current MRE students</div>
         <ul>
+          <li>Non-voting associate membership</li>
+          <li>Mentorship pairing with practitioners</li>
+          <li>Member lectures, mixers &amp; site tours</li>
+          <li>Early access to the hiring network</li>
+        </ul>
+        <a class="btn btn-green" href="#join">Join Now</a>
+      </div>
+      <div class="tier">
+        <h3>Recent Graduate</h3>
+        <div class="price">Free</div>
+        <div class="per">first year after graduation</div>
+        <ul>
+          <li>Full voting membership for new MRE graduates</li>
+          <li>All chapter dinners, forums &amp; member events</li>
+          <li>Mentee priority in the mentorship program</li>
+          <li>Alumni directory access</li>
+          <li>Continues at the $75 regular rate after year one</li>
+        </ul>
+        <a class="btn btn-green" href="#join">Join Now</a>
+      </div>
+      <div class="tier featured">
+        <span class="flag">Alumni · Voting</span>
+        <h3>Regular Membership</h3>
+        <div class="price">$75</div>
+        <div class="per">per person · per year · MRE &amp; MDes (REBE) alumni</div>
+        <ul>
+          <li>Full voting rights in member meetings &amp; elections</li>
           <li>All chapter dinners, forums &amp; member events</li>
           <li>Alumni directory access</li>
           <li>Mentorship program participation</li>
-          <li>Quarterly newsletter &amp; research publications</li>
-          <li>Voting rights in member meetings &amp; elections for MRE and MDes (REBE) graduates</li>
-          <li>Eligible to run for National Operating Board office</li>
+          <li>Eligible for National Operating Board office</li>
         </ul>
         <a class="btn btn-gold" href="#join">Join Now</a>
+      </div>
+      <div class="tier">
+        <h3>Non-Alumni Membership</h3>
+        <div class="price">$125</div>
+        <div class="per">per person · per year</div>
+        <ul>
+          <li>Open to all Harvard affiliates and real estate professionals who are not MRE or MDes (REBE) alumni</li>
+          <li>Non-voting membership</li>
+          <li>All chapter dinners, forums &amp; member events</li>
+          <li>Alumni directory access</li>
+          <li>Eligible to run for National Operating Board office</li>
+        </ul>
+        <a class="btn btn-green" href="#join">Join Now</a>
       </div>
     </div>
     <p class="notice">Good standing requires current annual dues and adherence to the Association's Professional Code of Conduct. Dues beyond the fair value of benefits are tax-deductible to the extent allowed by law.</p>
@@ -99,7 +136,7 @@
       <span class="section-kicker">Application</span>
       <h2 class="section-title">Membership Application</h2>
       <hr class="rule-under">
-      <p>Membership is $75 per person per year. Voting rights are reserved for MRE and MDes (REBE) graduates; current students and allied applicants with a demonstrated real estate focus join as non-voting members.</p>
+      <p>Regular membership for MRE and MDes (REBE) alumni is $75 per person per year. Current MRE students join free, and new MRE graduates join free for their first year. Non-alumni, including all Harvard affiliates who are not MRE or MDes (REBE) alumni, join as non-voting members at $125 per year.</p>
     </div>
     <form class="form-panel" action="mailto:info@mreaa.org" method="post" enctype="text/plain">
       <div class="form-grid">
@@ -125,8 +162,8 @@
             <option value="">Select…</option>
             <option>Master in Real Estate (MRE)</option>
             <option>MDes — Real Estate &amp; Built Environment (REBE)</option>
-            <option>Current Student (MRE or MDes REBE)</option>
-            <option>Other (Affiliate applicant)</option>
+            <option>Current MRE Student</option>
+            <option>Other / Non-Alumni (including all Harvard affiliates)</option>
           </select>
         </div>
         <div>
@@ -136,7 +173,11 @@
         <div>
           <label for="tier">Membership</label>
           <select id="tier" name="tier" required>
-            <option>Annual Membership — $75 per year</option>
+            <option value="">Select…</option>
+            <option>Student Member — Free (current MRE students)</option>
+            <option>Recent Graduate — Free (first year)</option>
+            <option>Regular Membership — $75 per year</option>
+            <option>Non-Alumni Membership — $125 per year</option>
           </select>
         </div>
         <div>
