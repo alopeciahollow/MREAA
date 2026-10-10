@@ -6,6 +6,26 @@
 <title>Nominations — MREAA</title>
 <meta name="description" content="Nominate yourself or a fellow member for the MRE Alumni Association National Operating Board.">
 <link rel="stylesheet" href="styles.css">
+<style>
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0; border: 1px solid #e7e2d4; background: var(--white); }
+  .step { padding: 26px 24px; border-right: 1px solid #e7e2d4; }
+  .step:last-child { border-right: none; }
+  .step .n { font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-600); margin-bottom: 6px; }
+  .step h3 { color: var(--green-800); font-size: 1.08rem; margin-bottom: 6px; }
+  .step p { color: var(--ink-soft); font-size: 0.92rem; line-height: 1.55; }
+  .positions { text-align: center; color: var(--ink-soft); font-size: 0.95rem; margin-top: 28px; }
+  .positions strong { color: var(--green-800); }
+  .form-section { border-top: 1px solid #ece6d6; padding-top: 26px; margin-top: 26px; }
+  .form-section:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+  .form-section h3 { color: var(--green-900); font-size: 1.15rem; margin-bottom: 4px; }
+  .form-section .hint { font-family: var(--sans); font-size: 0.82rem; color: var(--ink-soft); margin-bottom: 18px; }
+  .choice { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .choice label { display: flex; align-items: center; gap: 10px; border: 1.5px solid #cfc9b8; background: var(--cream); padding: 14px 16px; cursor: pointer; margin: 0; text-transform: none; letter-spacing: 0; font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--ink); }
+  .choice input { width: auto; accent-color: var(--green-700); }
+  .choice label:has(input:checked) { border-color: var(--green-700); background: var(--green-100); }
+  .stack > * + * { margin-top: 10px; }
+  @media (max-width: 760px) { .step { border-right: none; border-bottom: 1px solid #e7e2d4; } .choice { grid-template-columns: 1fr; } }
+</style>
 </head>
 <body>
 
@@ -40,71 +60,39 @@
 <section class="page-hero">
   <span class="section-kicker">Leadership</span>
   <h1>Nominations</h1>
-  <p>Nominate yourself or a fellow member for the National Operating Board. Every seat is won through a merit-based, deliverable-driven election.</p>
+  <p>Nominate yourself or a fellow member for the National Operating Board.</p>
 </section>
 
 <section class="band">
   <div class="container">
     <div class="section-head">
-      <span class="section-kicker">Open Positions</span>
-      <h2 class="section-title">The National Operating Board</h2>
-      <hr class="rule-under">
-      <p>Seven officers elected by the voting membership to two-year terms, with a limit of two consecutive terms in the same position.</p>
-    </div>
-    <div class="grid cols-3">
-      <div class="card">
-        <h3>Operating President</h3>
-        <p>Leads the National Operating Board and the Association's day-to-day affairs. Filled by the sitting President-Select after a 90-day transition.</p>
-      </div>
-      <div class="card">
-        <h3>Operating Vice President</h3>
-        <p>Elected as President-Select and automatically becomes Operating President when the current term ends.</p>
-      </div>
-      <div class="card">
-        <h3>Operating Treasurer</h3>
-        <p>Manages dues, operating budgets, and quarterly financial reports, with dual authorization on all payments.</p>
-      </div>
-      <div class="card">
-        <h3>Operating Secretary</h3>
-        <p>Keeps minutes of all board and member meetings and distributes them within seven days.</p>
-      </div>
-      <div class="card">
-        <h3>Chapter Leads</h3>
-        <p>Three seats, for Boston, New York, and Los Angeles. Each runs quarterly chapter dinners and sits on the national board.</p>
-      </div>
-      <div class="card">
-        <h3>Who Can Run</h3>
-        <p>Any member in good standing, including non-alumni members. Nominees must accept and submit a Deliverable Plan to appear on the ballot.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="band green">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-kicker" style="color:#c9a84c;">How It Works</span>
-      <h2 class="section-title" style="color:#fff;">The Election Process</h2>
+      <span class="section-kicker">How It Works</span>
+      <h2 class="section-title">From Nomination to Office</h2>
       <hr class="rule-under">
     </div>
-    <div class="grid cols-2">
-      <div class="card">
-        <h3>1. Nominations · 3 weeks</h3>
-        <p>Candidates submit a Statement of Intent and a Deliverable Plan with at least three SMART goals: specific, measurable, achievable, relevant, and time-bound.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="n">Step 1 · 3 weeks</div>
+        <h3>Nominate</h3>
+        <p>Submit the form below for yourself or another member.</p>
       </div>
-      <div class="card">
-        <h3>2. Presentation · 1 week</h3>
-        <p>Candidate platforms go out to the full membership, and a virtual Town Hall may be held for questions.</p>
+      <div class="step">
+        <div class="n">Step 2 · 1 week</div>
+        <h3>Present</h3>
+        <p>Candidate platforms are shared with all members.</p>
       </div>
-      <div class="card">
-        <h3>3. Digital Voting · 1 week</h3>
-        <p>Secure online voting, one vote per verified voting member in good standing.</p>
+      <div class="step">
+        <div class="n">Step 3 · 1 week</div>
+        <h3>Vote</h3>
+        <p>Voting members elect officers through secure online voting.</p>
       </div>
-      <div class="card">
-        <h3>4. Transition</h3>
-        <p>New officers are seated at the start of the next fiscal quarter, beginning a 90-day handover with outgoing officers.</p>
+      <div class="step">
+        <div class="n">Step 4</div>
+        <h3>Take Office</h3>
+        <p>New officers begin a two-year term after a 90-day handover.</p>
       </div>
     </div>
+    <p class="positions"><strong>Open positions:</strong> Operating President · Vice President · Treasurer · Secretary · Chapter Leads for Boston, New York &amp; Los Angeles</p>
   </div>
 </section>
 
@@ -114,83 +102,108 @@
       <span class="section-kicker">Submit</span>
       <h2 class="section-title">Nomination Form</h2>
       <hr class="rule-under">
-      <p>Nominating someone else? We'll contact them to confirm they accept and to collect their Statement of Intent and Deliverable Plan.</p>
     </div>
     <form class="form-panel" action="mailto:info@mreaa.org" method="post" enctype="text/plain">
-      <div class="form-grid">
-        <div class="full">
-          <label for="type">I am nominating</label>
-          <select id="type" name="nomination_type" required>
-            <option value="self">Myself</option>
-            <option value="other">Another member</option>
-          </select>
-        </div>
 
-        <div>
-          <label for="nname">Nominee Full Name</label>
-          <input type="text" id="nname" name="nominee_name" required>
-        </div>
-        <div>
-          <label for="nemail">Nominee Email</label>
-          <input type="email" id="nemail" name="nominee_email" required>
-        </div>
-        <div>
-          <label for="position">Position</label>
-          <select id="position" name="position" required>
-            <option value="">Select a position…</option>
-            <option>Operating President</option>
-            <option>Operating Vice President (President-Select)</option>
-            <option>Operating Treasurer</option>
-            <option>Operating Secretary</option>
-            <option>Chapter Lead: Boston</option>
-            <option>Chapter Lead: New York</option>
-            <option>Chapter Lead: Los Angeles</option>
-          </select>
-        </div>
-        <div>
-          <label for="nprogram">Nominee Program &amp; Year</label>
-          <input type="text" id="nprogram" name="nominee_program" placeholder="e.g., MRE 2022, or Non-Alumni">
-        </div>
-
-        <div class="full" id="nominator-fields" style="display:none;">
-          <div class="form-grid">
-            <div>
-              <label for="yname">Your Full Name</label>
-              <input type="text" id="yname" name="nominator_name">
-            </div>
-            <div>
-              <label for="yemail">Your Email</label>
-              <input type="email" id="yemail" name="nominator_email">
-            </div>
+      <div class="form-section">
+        <h3>Your Information</h3>
+        <p class="hint">Tell us about yourself.</p>
+        <div class="form-grid">
+          <div>
+            <label for="yname">Full Name</label>
+            <input type="text" id="yname" name="your_name" required>
+          </div>
+          <div>
+            <label for="yemail">Email</label>
+            <input type="email" id="yemail" name="your_email" required>
+          </div>
+          <div>
+            <label for="yphone">Phone (optional)</label>
+            <input type="tel" id="yphone" name="your_phone">
+          </div>
+          <div>
+            <label for="yprogram">Program &amp; Year</label>
+            <input type="text" id="yprogram" name="your_program" placeholder="e.g., MRE 2022, or Non-Alumni">
+          </div>
+          <div>
+            <label for="ycompany">Company &amp; Title (optional)</label>
+            <input type="text" id="ycompany" name="your_company">
+          </div>
+          <div>
+            <label for="ychapter">Chapter</label>
+            <select id="ychapter" name="your_chapter">
+              <option value="">Select…</option>
+              <option>Boston</option>
+              <option>New York</option>
+              <option>Los Angeles</option>
+              <option>Other / Remote</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="ylinkedin">LinkedIn Profile (optional)</label>
+            <input type="url" id="ylinkedin" name="your_linkedin" placeholder="https://www.linkedin.com/in/…">
           </div>
         </div>
+      </div>
 
-        <div class="full">
-          <label for="why" id="why-label">Statement of Intent</label>
-          <textarea id="why" name="statement" rows="4" placeholder="Why you're running and what you'd bring to the role." required></textarea>
+      <div class="form-section">
+        <h3>Nomination</h3>
+        <p class="hint">Who are you nominating, and for which role?</p>
+        <div class="choice" style="margin-bottom:18px;">
+          <label><input type="radio" name="nominating" value="Myself" checked> Myself</label>
+          <label><input type="radio" name="nominating" value="Another member"> Another member</label>
         </div>
+        <div class="form-grid">
+          <div class="full">
+            <label for="position">Position</label>
+            <select id="position" name="position" required>
+              <option value="">Select a position…</option>
+              <option>Operating President</option>
+              <option>Operating Vice President (President-Select)</option>
+              <option>Operating Treasurer</option>
+              <option>Operating Secretary</option>
+              <option>Chapter Lead: Boston</option>
+              <option>Chapter Lead: New York</option>
+              <option>Chapter Lead: Los Angeles</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-grid" id="nominee-fields" style="display:none; margin-top:18px;">
+          <div>
+            <label for="nname">Nominee Full Name</label>
+            <input type="text" id="nname" name="nominee_name">
+          </div>
+          <div>
+            <label for="nemail">Nominee Email</label>
+            <input type="email" id="nemail" name="nominee_email">
+          </div>
+          <div class="full">
+            <label for="nprogram">Nominee Program &amp; Year</label>
+            <input type="text" id="nprogram" name="nominee_program" placeholder="e.g., MRE 2019, or Non-Alumni">
+          </div>
+        </div>
+      </div>
 
-        <div class="full" id="goals">
-          <label>Deliverable Plan: Three SMART Goals</label>
-          <input type="text" name="goal_1" placeholder="Goal 1" style="margin-bottom:10px;">
-          <input type="text" name="goal_2" placeholder="Goal 2" style="margin-bottom:10px;">
-          <input type="text" name="goal_3" placeholder="Goal 3">
+      <div class="form-section">
+        <h3 id="why-title">Why You're Running</h3>
+        <p class="hint" id="why-hint">Share your Statement of Intent and three goals you'd commit to in the role.</p>
+        <div class="stack">
+          <textarea id="why" name="statement" rows="4" placeholder="What you'd bring to the role." required></textarea>
+          <div id="goals" class="stack">
+            <input type="text" name="goal_1" placeholder="Goal 1">
+            <input type="text" name="goal_2" placeholder="Goal 2">
+            <input type="text" name="goal_3" placeholder="Goal 3">
+          </div>
         </div>
+      </div>
 
-        <div class="full" style="text-align:center;">
-          <button class="btn btn-gold" type="submit">Submit Nomination</button>
-          <p class="notice">Nominations are sent to info@mreaa.org. Nominees must be members in good standing.</p>
-        </div>
+      <div style="text-align:center; margin-top:30px;">
+        <button class="btn btn-gold" type="submit">Submit Nomination</button>
+        <p class="notice">Sent to info@mreaa.org. Nominees must be members in good standing; we'll confirm with anyone nominated by another member.</p>
       </div>
     </form>
   </div>
 </section>
-
-<div class="cta-strip">
-  <h2>Not a Member Yet?</h2>
-  <p>Membership in good standing is required to run for the National Operating Board.</p>
-  <a class="btn btn-green" href="membership.html">Become a Member</a>
-</div>
 
 <footer class="site">
   <div class="container footer-grid">
@@ -229,21 +242,25 @@
 
 <script>
   (function () {
-    var type = document.getElementById('type');
-    var nominator = document.getElementById('nominator-fields');
+    var radios = document.querySelectorAll('input[name="nominating"]');
+    var nominee = document.getElementById('nominee-fields');
     var goals = document.getElementById('goals');
-    var whyLabel = document.getElementById('why-label');
+    var title = document.getElementById('why-title');
+    var hint = document.getElementById('why-hint');
     var why = document.getElementById('why');
     function update() {
-      var other = type.value === 'other';
-      nominator.style.display = other ? '' : 'none';
-      document.getElementById('yname').required = other;
-      document.getElementById('yemail').required = other;
+      var other = document.querySelector('input[name="nominating"]:checked').value !== 'Myself';
+      nominee.style.display = other ? '' : 'none';
+      document.getElementById('nname').required = other;
+      document.getElementById('nemail').required = other;
       goals.style.display = other ? 'none' : '';
-      whyLabel.textContent = other ? 'Why are you nominating this person?' : 'Statement of Intent';
-      why.placeholder = other ? 'What makes them a strong fit for this role?' : "Why you're running and what you'd bring to the role.";
+      title.textContent = other ? 'Why This Person' : "Why You're Running";
+      hint.textContent = other
+        ? "Tell us why they'd be a strong fit. We'll invite them to submit their own goals."
+        : "Share your Statement of Intent and three goals you'd commit to in the role.";
+      why.placeholder = other ? 'What makes them a strong fit for this role?' : "What you'd bring to the role.";
     }
-    type.addEventListener('change', update);
+    radios.forEach(function (r) { r.addEventListener('change', update); });
     update();
   })();
 </script>
