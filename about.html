@@ -6,6 +6,13 @@
 <title>About — MREAA</title>
 <meta name="description" content="The mission, governance, and chapters of the MRE Alumni Association, an independent Massachusetts 501(c)(3) nonprofit devoted to real estate education and the built environment.">
 <link rel="stylesheet" href="styles.css">
+<style>
+  .grid.row-4 { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .grid.row-5 { grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  .grid.row-4 .card, .grid.row-5 .card { padding: 26px 20px; }
+  @media (max-width: 960px) { .grid.row-4, .grid.row-5 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .grid.row-4, .grid.row-5 { grid-template-columns: 1fr; } }
+</style>
 </head>
 <body>
 
@@ -81,7 +88,7 @@
       <h2 class="section-title" style="color:#fff;">Programs &amp; Initiatives</h2>
       <hr class="rule-under">
     </div>
-    <div class="grid cols-2">
+    <div class="grid row-4">
       <div class="card">
         <h3>Student Scholarship Fund</h3>
         <p>Financial scholarships and grants awarded directly to students enrolled in the MRE degree program, funded by dues, pledges, and corporate sponsorships.</p>
@@ -135,7 +142,7 @@
       <hr class="rule-under">
       <p>Each chapter is managed by an elected Chapter Lead who also sits on the National Operating Board, and hosts quarterly member dinners alongside the Association's public educational programming.</p>
     </div>
-    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr));">
+    <div class="grid row-5">
       <div class="card">
         <h3>Los Angeles</h3>
         <p>Alumni across Southern California in development, design, and investment.</p>
