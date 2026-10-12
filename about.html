@@ -9,9 +9,16 @@
 <style>
   .grid.row-4 { grid-template-columns: repeat(4, 1fr); gap: 20px; }
   .grid.row-5 { grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  .grid.row-6 { grid-template-columns: repeat(6, 1fr); gap: 14px; }
   .grid.row-4 .card, .grid.row-5 .card { padding: 26px 20px; }
+  .grid.row-6 .card { padding: 22px 16px; }
+  .grid.row-6 .card h3 { font-size: 1.02rem; }
+  .grid.row-6 .card p { font-size: 0.88rem; line-height: 1.55; }
+  .container.wide { max-width: 1340px; }
+  @media (max-width: 1100px) { .grid.row-6 { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 960px) { .grid.row-4, .grid.row-5 { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 560px) { .grid.row-4, .grid.row-5 { grid-template-columns: 1fr; } }
+  @media (max-width: 700px) { .grid.row-6 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .grid.row-4, .grid.row-5, .grid.row-6 { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -82,28 +89,36 @@
 </section>
 
 <section class="band green">
-  <div class="container">
+  <div class="container wide">
     <div class="section-head">
       <span class="section-kicker" style="color:#c9a84c;">Our Work</span>
       <h2 class="section-title" style="color:#fff;">Programs &amp; Initiatives</h2>
       <hr class="rule-under">
     </div>
-    <div class="grid row-4">
+    <div class="grid row-6">
       <div class="card">
-        <h3>Student Scholarship Fund</h3>
-        <p>Financial scholarships and grants awarded directly to students enrolled in the MRE degree program, funded by dues, pledges, and corporate sponsorships.</p>
+        <h3>Student Scholarships</h3>
+        <p>Scholarships and grants for MRE students, funded by dues, pledges, and sponsorships.</p>
       </div>
       <div class="card">
-        <h3>Mentorship Program</h3>
-        <p>Structured, year-long pairings of established industry practitioners with current students — every officer also carries an affirmative duty to mentor a successor.</p>
+        <h3>Student Access Fund</h3>
+        <p>Anonymous, need-based support so students from lower-income backgrounds can join events, trips, and programs that cost money.</p>
       </div>
       <div class="card">
-        <h3>Public Educational Events</h3>
-        <p>At least two general educational events each year — industry panels, site visits, and student mixers — open to the broader real estate community, students of any institution, and the public.</p>
+        <h3>Conference Funding</h3>
+        <p>Covering registration and travel so students can attend industry conferences.</p>
       </div>
       <div class="card">
-        <h3>Research &amp; Publications</h3>
-        <p>Conducting, publishing, and disseminating research that promotes sustainable, ethical, and resilient urban development for the public benefit.</p>
+        <h3>Mentorship</h3>
+        <p>Year-long pairings of experienced practitioners with current students.</p>
+      </div>
+      <div class="card">
+        <h3>Public Events</h3>
+        <p>Panels, site visits, and mixers open to students of any school and the public.</p>
+      </div>
+      <div class="card">
+        <h3>Research</h3>
+        <p>Publishing work that advances sustainable, ethical, and resilient development.</p>
       </div>
     </div>
   </div>
@@ -135,12 +150,12 @@
 </section>
 
 <section class="band alt">
-  <div class="container">
+  <div class="container wide">
     <div class="section-head">
       <span class="section-kicker">Where We Gather</span>
       <h2 class="section-title">Regional Chapters</h2>
       <hr class="rule-under">
-      <p>Each chapter is managed by an elected Chapter Lead who also sits on the National Operating Board, and hosts quarterly member dinners alongside the Association's public educational programming.</p>
+      <p>Each region is led by an elected Regional Lead who hosts quarterly member dinners and local programming.</p>
     </div>
     <div class="grid row-5">
       <div class="card">
